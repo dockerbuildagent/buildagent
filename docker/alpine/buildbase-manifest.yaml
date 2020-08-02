@@ -1,15 +1,15 @@
-image: dockslim/gcc-cmake-ninja:alpine
+image: dockerbuildagent/buildbase:alpine
 manifests:
-  - image: dockslim/gcc-cmake-ninja:alpine-amd64
+  - image: dockerbuildagent/buildbase:alpine-amd64
     platform:
       architecture: amd64
       os: linux
-  - image: dockslim/gcc-cmake-ninja:alpine-arm32v7
+  - image: dockerbuildagent/buildbase:alpine-arm32v7
     platform:
       architecture: arm
       os: linux
       variant: v7
-  - image: dockslim/gcc-cmake-ninja:alpine-arm64v8
+  - image: dockerbuildagent/buildbase:alpine-arm64v8
     platform:
       architecture: arm64
       os: linux

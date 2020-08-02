@@ -1,0 +1,6 @@
+image: dockerbuildagent/dotnet-buildbase:alpine
+manifests:
+  - image: dockerbuildagent/dotnet-buildbase:alpine-amd64
+    platform:
+      architecture: amd64
+      os: linux
