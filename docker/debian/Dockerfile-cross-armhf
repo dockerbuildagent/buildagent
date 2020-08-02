@@ -13,6 +13,8 @@ RUN apt-get update \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 
+ENV QEMU_LD_PREFIX=/usr/arm-linux-gnueabihf
+
 # Entrypoint/CMD
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh

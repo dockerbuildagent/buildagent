@@ -4,8 +4,6 @@ cmake_minimum_required(VERSION 3.5)
 # project name and supported languages
 project(SampleProject C CXX)
 
-enable_testing()
-
 # project version
 set(VERSION_MAJOR 1)
 set(VERSION_MINOR 0)
